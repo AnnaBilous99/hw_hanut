@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>shoppingCart_ANNA BILOUS</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>ShopForU</h1>
+      <div class="nav">
+        <a href="#">Shopping Cart</a>
+        <a href="#">Fruits</a>
+        <a href="hanut.html">Vegetetables</a>
+        <a href="#">Sweet</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="products">
+        <div class="product">
+          <h2>Tomato</h2>
+          <p>Price - 5$.</p>
+          <img src="img/agvania.jpg" />
+          <div class="content_button">
+            <button onclick="addToCart(1)">Add To Cart</button>
+            <button onclick="removeProduct(1)">Remove Tomato</button>
+          </div>
+        </div>
+        <div class="product">
+          <h2>Cucumber</h2>
+          <p>Price - 10$</p>
+          <img src="img/melafefon.jpg" />
+          <div class="content_button">
+            <button onclick="addToCart(2)">Add To Cart</button>
+            <button onclick="removeProduct(2)">Remove Cucumber</button>
+          </div>
+        </div>
+        <div class="product">
+          <h2>Onion</h2>
+          <p>Price - 15$.</p>
+          <img src="img/bazal.jpg" />
+          <div class="content_button">
+            <button onclick="addToCart(3)">Add To Cart</button>
+            <button onclick="removeProduct(3)">Remove Onion</button>
+          </div>
+        </div>
+      </div>
+      <div class="change">
+        <div id="shoppingCart"></div>
+        <div id="productPrice">
+          <h2>Total Price: 0</h2>
+          <div class="data"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="link">
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Adress</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

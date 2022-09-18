@@ -1,0 +1,141 @@
+body {
+  background-color: bisque;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-image: url(img/store.jpg);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+li {
+  margin: 1.5%;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(52, 38, 38);
+  background-color: #feefdc;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 20% 20%;
+  margin: 2%;
+  box-shadow: 0 10px #999;
+}
+a:hover {
+  background-color: #001e63;
+  color: rgb(209, 209, 245);
+  box-shadow: 0 5px rgb(65, 64, 64);
+}
+a:active {
+  border-color: #4b1a2d;
+  color: #ffc4c4;
+  box-shadow: none;
+}
+h1 {
+  color: rgb(13, 14, 14);
+  text-align: center;
+}
+
+h2 {
+  background-color: rgba(110, 201, 202, 1);
+  font-size: 25px;
+  color: rgb(114, 75, 44);
+}
+.content {
+  background-color: #f3f97c;
+  color: #180f12;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3px;
+  padding: 3px;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgb(110, 201, 202);
+}
+.product {
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 29%;
+  border: rgb(188, 194, 10) double 7px;
+  background-color: rgb(233, 229, 229);
+}
+
+.product:hover {
+  background-color: rgb(251, 251, 255);
+}
+.productName,
+.productPrice {
+  padding-right: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+.productPrice {
+  font-weight: 700;
+  color: rgb(62, 2, 62);
+}
+
+img {
+  background-color: rgba(251, 221, 197, 1);
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50px;
+  box-shadow: 12px 10px 19px 1px #545248;
+}
+.product img {
+  border-radius: 40%;
+  max-width: 200px;
+  max-height: 200px;
+}
+button {
+  color: rgb(33, 33, 4);
+  background: rgb(110, 201, 202); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(110, 201, 202, 1) 0%,
+    rgba(251, 221, 197, 1) 97%,
+    rgba(248, 229, 212, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(110, 201, 202, 1) 0%,
+    rgba(251, 221, 197, 1) 97%,
+    rgba(248, 229, 212, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(110, 201, 202, 1) 0%,
+    rgba(251, 221, 197, 1) 97%,
+    rgba(248, 229, 212, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ec9ca', endColorstr='#f8e5d4',GradientType=0 );
+  border-radius: 50px;
+  font-size: 20px;
+}
+.change {
+  display: inline-flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #73b2b3;
+  text-align: center;
+}
